@@ -50,15 +50,7 @@ export function ClientDetails({ client, onClose }: ClientDetailsProps) {
         <DialogHeader className="banestes-gradient rounded-t-lg p-4 text-white">
           <DialogTitle className="text-xl font-bold">{client.nome || "Nome não disponível"}</DialogTitle>
           <DialogDescription className="text-white/90">{formatCpfCnpj(client.cpfCnpj)}</DialogDescription>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-4 text-white hover:bg-white/10"
-            onClick={handleClose}
-          >
-            <X className="h-4 w-4" />
-            <span className="sr-only">Fechar</span>
-          </Button>
+         
         </DialogHeader>
 
         <div className="p-4">
